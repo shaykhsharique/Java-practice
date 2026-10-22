@@ -4,18 +4,15 @@ public class CaseCheck {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter Principal amount: ");
-        double p = sc.nextDouble();
+        System.out.print("Enter any character: ");
+        char ch = sc.next().trim().charAt(0);
 
-        System.out.print("Enter Rate of interest: ");
-        double r = sc.nextDouble();
-
-        System.out.print("Enter Time in years: ");
-        double t = sc.nextDouble();
-
-        double simpleInterest = (p * r * t) / 100;
-        System.out.println("Calculated Simple Interest: " + simpleInterest);
+        if (ch >= 'a' && ch <= 'z') {
+            System.out.println("Lowercase");
+        } else if (ch >= 'A' && ch <= 'Z') {
+            System.out.println("Uppercase");
+        } else {
+            System.out.println("Not an alphabet");
+        }
     }
 }
-
-      
