@@ -12,7 +12,8 @@ import java.util.Scanner;
           case 6, 7 -> System.out.println("weekend");
           default -> System.out.println("Invalide day entered");
       }
-      //Nested Enhanced Switch
+      //Nested Enhanced Switch\
+      
           System.out.println("\nEnter Employee ID (1,2 and 3): ");
           int empID = in.nextInt();
 
